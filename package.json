@@ -1,5 +1,5 @@
 {
-  "name": "nostr-screenshot-generator",
+  "name": "nostr-screenshot",
   "version": "1.0.0",
   "description": "A NodeJS library to generate screenshots of nostr notes on server",
   "main": "index.js",
@@ -19,5 +19,9 @@
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djhemath/nostr-screenshot.git"
   }
 }
