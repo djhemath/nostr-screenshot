@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A NodeJS library to generate screenshots of nostr notes on server",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsc && npm run copyfiles && node dist/index.js",
+    "copyfiles": "copyfiles -u 1 assets/**/* dist/assets/"
   },
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -21,6 +22,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^22.9.0",
+    "copyfiles": "^2.4.1",
     "typescript": "^5.6.3"
   },
   "repository": {
@@ -28,8 +30,8 @@
     "url": "git+https://github.com/djhemath/nostr-screenshot.git"
   },
   "dependencies": {
+    "@napi-rs/canvas": "^0.1.60",
     "@nostr-dev-kit/ndk": "^2.10.5",
-    "canvas": "^2.11.2",
     "nostr-tools": "^2.10.1",
     "ts-node": "^10.9.2"
   },
